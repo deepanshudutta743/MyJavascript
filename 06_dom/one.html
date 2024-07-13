@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <style>
+        .bg-black{
+            background-color:#212121;
+            color: #fff;
+        }
+    </style>
+</head>
+<body class="bg-black">
+    <div >
+        <h1 id="title" class="heading">Dom leaning from deepanshu
+            <span style="display: none;">My windows</span>
+        </h1>
+        <h2>Lorem ipsum dolor sit amet.</h2>
+        <h2>Lorem ipsum dolor sit amet.</h2>
+        <p>Lorem ipsum dolor sit amet.
+        </p>
+        <input type="password" name="" id="">
+        <ul>
+            <li class="list-item">One</li>
+            <li class="list-item">Two</li>
+            <li class="list-item">Three</li>
+        </ul>
+    </div>
+</body>
+</html>
+<!-- // notes
+// in case of innerText it will only show what is visible
+// but in case of textContent it will show regardless of hindind by css property
+nodeList and htmlelements are not purely array
+--when u have htmlcollection u need to convert it into array first 
+by using Array.from()
+
+const allH2=document.querySelectorAll('h2');
+-- it will be nodelist
+allH2.forEach((h)=>{
+h.style.backGroundColor="green";
+})
+-->
